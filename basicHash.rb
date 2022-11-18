@@ -1,7 +1,7 @@
 def hash (a)
-    arrAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#".split('')
+    arrAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#".chars
     hashed = ""
-    a.split('').each do |b|
+    a.chars.each do |b|
         arrAlpha.each_with_index do |c, i|
              if b == c 
                 hashed+="#{i}"
