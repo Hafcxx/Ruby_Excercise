@@ -1,6 +1,5 @@
 class Dragon
     attr_reader :name, :rider, :color, :hungry, :stomach
-    attr_writer :hungry, :stomach
     
     def initialize (name, color, rider, hungry = true)
         @name = name 
@@ -10,7 +9,7 @@ class Dragon
         @stomach = 0
     end
     def hungry?
-        @hungry == true ? true : false
+        hungry
     end
     def eat
         @stomach+= 1
